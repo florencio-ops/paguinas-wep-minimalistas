@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.inicio {
+    padding: 20px;
+}
+
+.imagenes img {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* DiseÃ±o adaptable */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Fondo de Dragon Ball Z */
+body {
+    background-image: url('dragon_ball_z_background.png'); /* Asegúrate de tener esta imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Animaciones para las actividades */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.activity {
+    display: none; /* Ocultar por defecto */
+    animation: fadeIn 0.5s forwards; /* Animación de desvanecimiento */
+}
+
+/* Estilos para el hover en el menú */
+.menu a {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    transform: scale(1.1);
+}
