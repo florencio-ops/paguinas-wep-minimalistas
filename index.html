@@ -6,10 +6,164 @@
     <title>Página de Inicio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #0000ff;
+        }
+        
+        .contenedor {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+        }
+        
+        .sidebar {
+            width: 235px;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo {
+    width: 60px; /* Reduje el tamaño */
+    margin-bottom: 20px; /* Ajusté el margen */
+}
+        
+        .navegacion {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        
+        .nav-item {
+            display: block;
+            background-color: #b36dff;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item:hover {
+            background-color: #9a4dff;
+            transform: scale(1.05);
+        }
+        
+        .main-content {
+            flex: 1;
+            position: relative;
+        }
+        
+        .menu-superior {
+            display: flex;
+            background-color: #0000ff;
+            padding: 10px 20px;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        
+        .menu-item {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            text-decoration: underline;
+        }
+        
+        .contenido {
+            display: flex;
+            padding: 20px;
+        }
+        
+        .texto-contenido {
+            flex: 1;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+            min-height: 300px;
+        }
+        
+        .imagen-contenido {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .imagen-contenido img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .btn-leer {
+            display: inline-block;
+            background-color: #b36dff;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-leer:hover {
+            background-color: #9a4dff;
+            transform: scale(1.05);
+        }
+        
+        @media screen and (max-width: 992px) {
+            .contenedor {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                padding: 10px;
+            }
+            
+            .contenido {
+                flex-direction: column;
+            }
+            
+            .texto-contenido {
+                clip-path: none;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 <body>
     <header>
-            <nav>
-                <ul class="menu">
             <div class="main-content">
             <div class="menu-superior">
                 <li><a href="https://florencio-ops.github.io/paguinas-wep-minimalistas/paguina_wep1/bootstrap/index.html">Actividad 1</a></li>
@@ -19,8 +173,6 @@
                 <li><a href="https://florencio-ops.github.io/paguinas-wep-minimalistas/paguina_wep_eredar/localStorage/index.html">Localhost</a></li>
                 <li><a href="sin archivo">Curriculum,en proceso</a></li>
              </div>
-                <ul>
-                 </nav>
     </header>
 
     <main class="inicio">
